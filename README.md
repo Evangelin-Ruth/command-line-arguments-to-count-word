@@ -20,11 +20,10 @@ Anaconda - Python 3.7
 ### step 7:End of the Program
 
 ## PROGRAM:
-
+```
 #Program to command line arguments to count word
 #Developed by: Evangelin.S
 #Register number: 212221230025
-```
 import sys
 fp = open(sys.argv[1])
 count=0
