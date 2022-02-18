@@ -5,39 +5,35 @@ To write a python program for getting the word count from the contents of a file
 PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
-### Step 1:Import sys module to use command line arguments.
+### Step 1:Import the sys module.
 
-### Step 2: Use the open() by getting the file name with "sys.argv[1]" which means the first index of given argument
+### Step 2: Pass the filename as the first argument after the name of script. Open the file as sys.argv[1]
  
-### Step 3: Iterate the content of the file using for loop.
+### Step 3: Read the file using read() method.
 
-### Step 4:  Split the contents into each line using .split() function
+### Step 4:  Use split() method to split the file content into words.
 
-### Step 5: Iterate the list of lines and increment the value of variable (word) each time
+### Step 5: Use len() to find the total words.
 
-### Step 6:Run the program by giving "python prgm.py EX12.txt" on the terminal.
-
-### step 7:End of the Program
+### Step 6:Run the program to determine the number of words in the file created.
 
 ## PROGRAM:
 ```
-#Program to command line arguments to count word
-#Developed by: Evangelin.S
-#Register number: 212221230025
+Python program for getting the word count from the contents of a file using command line arguments.
+Developed by:  Evangelin.S
+Register Number: 212221230025
+
 import sys
-fp = open(sys.argv[1])
-count=0
-for data in fp:
-    l=data.split()
-    for i in l:
-        count+=1
-print("No. of words in the file:",count)
+fp= open(sys.argv[1])
+data=fp.read()
+words=data.split()
+print("Total Words:",len(words))
 ```
 
 
 ### OUTPUT:
 
-![image](https://user-images.githubusercontent.com/94219798/154516840-755688bf-99d3-4ba2-912e-dd4d04f0234e.png)
+![image](https://user-images.githubusercontent.com/94219798/154705122-e87e3008-3cb1-4fad-9c00-f623caa11d21.png)
 
 
 ## RESULT:
